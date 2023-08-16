@@ -1,8 +1,3 @@
-#Terminal Colors
-export TERM="xterm-color"
-PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$'
-
-
 #Alias Functions
 brewski ()
 {
@@ -26,6 +21,11 @@ alias ll='ls -lahGFO'
 alias diff='colordiff'
 alias edit_profile='emacs ~/.bash_profile'
 alias reload_profile='source ~/.bash_profile'
+
+#Handy Tools
+alias grep="grep -n --color" 
+alias ping="ping -c 5" 
+alias myip='curl http://ipecho.net/plain; echo'
 
 #Common Terminal Spelling mistakes
 alias cd..='cd ..'
